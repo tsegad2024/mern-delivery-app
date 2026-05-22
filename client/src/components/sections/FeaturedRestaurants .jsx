@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const FeaturedRestaurants = () => {
   const [restaurants, setRestaurants] = useState([]);
   console.log("log: FeaturedRestaurants")
+  
   useEffect(() => {
     fetch("http://localhost:5000/api/restaurants")
       .then((res) => res.json())
